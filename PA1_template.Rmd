@@ -8,18 +8,40 @@ output:
 
 ## Loading and preprocessing the data
 
+```{r}
+library("lubridate")
+
+unzip("activity1.zip")
+
+activity_data <- read.csv("activity.csv")
+
+```
 
 
 ## What is mean total number of steps taken per day?
+```{r}
 
+mean(activity_data$steps, na.rm=TRUE)
+
+```
 
 
 ## What is the average daily activity pattern?
 
+```{r}
+
+```
 
 
 ## Imputing missing values
 
+```{r}
+
+```
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
+```{r}
+
+```
+
